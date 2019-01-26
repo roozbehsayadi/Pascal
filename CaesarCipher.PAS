@@ -19,3 +19,4 @@ begin
      writeln(ramz);
      readln;
 end.
+//this tiny program was almost my final project for 2nd class of junior high school and even it had bugs :)
