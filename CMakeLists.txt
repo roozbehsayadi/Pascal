@@ -1,6 +1,6 @@
 cmake_minimum_required (VERSION 3.0)
-include("${CMAKE_CURRENT_LIST_DIR}/cmake/radioutils_pascal/enable_pascal.cmake")
-enable_pascal("${CMAKE_BINARY_DIR}${CMAKE_FILES_DIRECTORY}/${CMAKE_VERSION}" "${CMAKE_CURRENT_LIST_DIR}/cmake/radioutils_pascal")
+include("${CMAKE_CURRENT_LIST_DIR}/cmake/enable_pascal.cmake")
+enable_pascal("${CMAKE_BINARY_DIR}${CMAKE_FILES_DIRECTORY}/${CMAKE_VERSION}" "${CMAKE_CURRENT_LIST_DIR}/cmake/radioutils-pascal_onlymodules")
 
 project (PascalPrograms Pascal)
 
