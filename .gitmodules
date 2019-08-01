@@ -1,0 +1,4 @@
+[submodule "cmake/radioutils"]
+	path = cmake/radioutils-pascal_onlymodules
+	url = https://github.com/armarti/radioutils-pascal
+	branch = onlymodules
