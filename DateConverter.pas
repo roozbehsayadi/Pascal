@@ -1,14 +1,25 @@
 program painting;
-var sh,cd,c:integer;
-	begin
-        c:=0;
-	read(sh);
+var
+	jalali,miladi,i:integer;
+	exit_code,zarib_tabdil:integer;
+begin
+
+
+	writeln('enter jalali year and we convert it to miladi');
+	zarib_tabdil := 621; // ekhtelaf e shamsi o miladi
+
+	writeln('and enter 0 for exit the program');
+	exit_code := 0;
+
+	i := 0;
 	repeat
-	cd:=sh+621;
-	writeln ('The year of ',sh,' is year of ',cd,' miladi');
-	c:=c+1;
-	read(sh);
-        until cd = 621;
-	write (c);
-	readln
+		read(jalali);
+		miladi:=jalali+zarib_tabdil; //
+		writeln ('The year of ',jalali,' is year of ',miladi,' miladi');
+		i:=i+1;
+	until jalali = exit_code;
+
+	writeln('we calculated ',i,' dates for you!, good bye!');
+	readln;
+
 end.
