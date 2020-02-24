@@ -1,15 +1,21 @@
-program sport;
-var sum,c,tikt:longint;
-	begin
+program SumAndCounter;
+
+var
+	sum,counter,temp:longint;
+begin
+
 	sum:=0;
-	read(tikt);
-	c:=0;
-	while tikt <>0 do
+	counter:=0;
+
+	read(temp);
+
+	while temp <>0 do
 	begin
-	sum:=sum+tikt;
-	c:=c+1;
-	read (tikt);
+		sum:=sum+temp;
+		counter:=counter+1;
+		read(temp);
 	end;
-	write ('Sum=',sum,'   C=',c);
-	readln
+
+	write ('jam e adad:',sum,'   tedad adad:',counter);
+	readln;
 end.
