@@ -1,4 +1,4 @@
-program control;
+program dividable_by_three;
 var
 	i,x:integer;
 begin
