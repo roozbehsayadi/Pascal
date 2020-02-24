@@ -1,7 +1,7 @@
+program RSA_Algorithm;
 uses crt;
 var
-ramz:array [1..1000] of longint;
-
+  ramz:array [1..1000] of longint;
 
 {MOHASEBAT E ADADI}
 function bmm(m,n:integer):integer;
@@ -30,8 +30,8 @@ end;
 
 function decryption(d,n:longint):string;
 var
-a,b,c,e,f,g,m,s:integer;
-sprime:string;
+  a,b,c,e,f,g,m,s:integer;
+  sprime:string;
 begin
      a:=1;
      while(ramz[a]<>0) do
@@ -52,22 +52,17 @@ var
      s,u:string;
      code:integer;
      p,q,n,phi,d,e,a:longint;
+     // need removing unsied variables
 
 begin
 
      e:=2;
      clrscr;
-{     assign(t,'primes.txt');
-     reset(t);
-     readln(t,s);
-     u:=copy(s,2,6);
-     val(u,p,code);
-     s:=copy(s,16,6);
-     val(s,q,code);
-     close(t);}
+
      textcolor(lightblue);
      writeln('do adad e aval vared konid');
      readln(p,q);
+
      n:=p*q;
      phi:=(p-1)*(q-1);
      while a<>1 do
@@ -75,6 +70,7 @@ begin
           if bmm(e,phi)=1 then a:=1
           else e:=e+1;
      end;
+
      a:=0;
      d:=e+1;
      while a<>1 do
@@ -82,27 +78,25 @@ begin
           if ((d*e) mod phi) = 1 then a:=1
           else inc(d);
      end;
+
      writeln('do kelid:' ,d,' ',e);
+
      textcolor(lightred);
      writeln('matn e morede nazar ra vared konid');
      readln(s);
+
      encryption(e,n,s);
+
      textcolor(brown);
      write('processing the text');
-     delay(500);
-     write('.');
-     delay(500);
-     write('.');
-     delay(500);
-     write('.');
-     delay(500);
+     delay(500); write('.'); delay(500); write('.'); delay(500); write('.'); delay(500);
      writeln;
+
      for a:=1 to length(s) do
          write(ramz[a], ' ');
      writeln;
-     writeln('Aya mikhahid matne asli ra bebinid? agar mikhahod bebinid yek dokme feshar dahid');
-     z:=readkey;
 
+     writeln('matne asli in bud:');
      writeln(decryption(d,n));
      readln;
 end.
