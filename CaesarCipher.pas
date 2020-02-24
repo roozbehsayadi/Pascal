@@ -1,7 +1,7 @@
 uses crt;
 var
   kalame,ramz:string;
-  a,b,i,kelid:integer;
+  b,i,kelid:integer;
 begin
      clrscr; //clear terminal screen
 
