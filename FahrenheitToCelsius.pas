@@ -1,13 +1,12 @@
-program tabdil;
-var f:integer;
-    c:real;
+program fahrenhaight_to_celsius;
+var
+  f:integer;
+  c:real;
+begin
+	for f := 5 to 120 do
 	begin
-	f:=5;
-	while f<=120 do
-	begin
-	c:=500/900*(f-32);
-	writeln (f,'fahrenhaight-is ',c:12:2,' celcius');
-        f:=f+1;
+  	c:=5/9*(f-32);
+  	writeln (f:3,' fahrenhaight is ',c:5:2,' celcius');
 	end;
-	readln
+	readln;
 end.

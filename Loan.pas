@@ -1,12 +1,13 @@
-program loan;
-var total,j,vam:integer;
-	begin
-	total:=0;
+program Loan;
+var
+	total_vam,j,ghest:integer;
+begin
+	total_vam:=0;
 	for j:=1 to 3 do
 	begin
-	read (vam);
-	total:=total+vam;
+		read(ghest);
+		total_vam:=total_vam+ghest;
 	end;
-	write ('the total of loan was ':31,total);
+	writeln('the total_vam of loan was ',total_vam);
 	readln;
 end.
